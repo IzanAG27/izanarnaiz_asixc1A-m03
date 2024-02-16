@@ -1,5 +1,6 @@
 from time import sleep
 
+
 # region Declaració de Funcions ----------
 def recopilar_ingredients():
     print("Comprar al supermercat")
@@ -9,8 +10,13 @@ def recopilar_ingredients():
     return print("Hecho")
 
 
+def preparar_aigua():
+    print("Escalfar-hi aigua")
+    print("Posar-hi sal")
+
+
 def cuinar_tallarines():
-    print("Preparar aigua")
+    preparar_aigua()
     sleep(1)
     print("Bullir tallarines")
     sleep(1)
@@ -20,28 +26,45 @@ def cuinar_tallarines():
     sleep(1)
 
 
+def fregir_pastanagues():
+    print("Preparar paella per fregir")
+    print("Rossejar pastanagues")
+    print("Netejar oli de paella")
+
+
 def cuinar_pastanagues():
     print("Tallar pastanagues")
     sleep(1)
-    print("Fregir pastanagues")
+    fregir_pastanagues()
     sleep(1)
     print("Deixar pastanagues")
     sleep(1)
 
 
+def fregir_cebes():
+    print("Preparar paella per fregir")
+    print("Rossejar cebes")
+    print("Netejar oli de paella")
+
+
 def cuinar_cebes():
     print("Tallar cebes")
     sleep(1)
-    print("Fregir cebes")
+    fregir_cebes()
     sleep(1)
     print("Deixar cebes preparades")
     sleep(1)
 
 
+def saltar_ingredients():
+    print("Preparar paella per saltar")
+    print("Cuinar remenant ingredients")
+
+
 def preparacio_final():
     print("Barrejar ingredients amb salsa yakitori")
     sleep(1)
-    print("Saltar ingredients")
+    saltar_ingredients()
     sleep(1)
     print("Deixar llest per servir")
     sleep(1)
